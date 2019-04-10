@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{17d86ddd-37b9-40d4-b549-248a0415cc43}"
+       Name="AssignedTo"
+       DisplayName="Assigned To"
+       BaseType="Text"
+       Type="User" Sealed="TRUE"
+       Required="FALSE"
+       ShowField="ImnName"
+       ShowInDisplayForm="TRUE"
+       ShowInEditForm="TRUE"
+       ShowInNewForm="TRUE"
+       ShowInListSettings="TRUE"
+       UserSelectionMode="PeopleOnly"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

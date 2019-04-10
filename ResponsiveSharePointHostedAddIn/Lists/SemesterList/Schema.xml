@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SemesterList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SemesterList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100098e0496c6e744999c329b8435e1255d" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{17d86ddd-37b9-40d4-b549-248a0415cc43}" Name="AssignedTo" /><FieldRef ID="{4b3d892b-fcb1-4b7a-936c-84ed8e3cf164}" Name="StartDate" /><FieldRef ID="{e73d59a6-4e7b-4298-8a8c-0f2e5f405946}" Name="EndDate" /><FieldRef ID="{2f0da971-e476-49d6-a380-85786fbe905b}" Name="AssignedId" /></FieldRefs></ContentType><ContentType ID="0x0100A6E5B5C1719C4887ADEA6C837F0D0D1C" Name="SemesterTypeContentType" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{17d86ddd-37b9-40d4-b549-248a0415cc43}" DisplayName="Assigned To" Required="FALSE" Name="AssignedTo" Sealed="TRUE" ShowInDisplayForm="TRUE" ShowInEditForm="TRUE" ShowInListSettings="TRUE" ShowInNewForm="TRUE" /><FieldRef ID="{4b3d892b-fcb1-4b7a-936c-84ed8e3cf164}" DisplayName="Start Date" Required="FALSE" Name="StartDate" Format="DateOnly" /><FieldRef ID="{e73d59a6-4e7b-4298-8a8c-0f2e5f405946}" DisplayName="End Date" Required="FALSE" Name="EndDate" Format="DateOnly" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{17d86ddd-37b9-40d4-b549-248a0415cc43}" Name="AssignedTo" DisplayName="Assigned To" BaseType="Text" Type="User" Sealed="TRUE" Required="FALSE" ShowField="ImnName" ShowInDisplayForm="TRUE" ShowInEditForm="TRUE" ShowInNewForm="TRUE" ShowInListSettings="TRUE" UserSelectionMode="PeopleOnly" Group="Custom Site Columns"></Field><Field ID="{4b3d892b-fcb1-4b7a-936c-84ed8e3cf164}" Name="StartDate" DisplayName="Start Date" Type="DateTime" Format="DateOnly" Group="Custom Site Columns" Required="FALSE"></Field><Field ID="{e73d59a6-4e7b-4298-8a8c-0f2e5f405946}" Name="EndDate" DisplayName="End Date" Type="DateTime" Format="DateOnly" Required="FALSE" Group="Custom Site Columns"></Field><Field ID="{2f0da971-e476-49d6-a380-85786fbe905b}" Name="AssignedId" DisplayName="Assigned Id" Type="Number" Required="FALSE" Group="Custom Site Columns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="AssignedTo" /><FieldRef Name="StartDate" /><FieldRef Name="EndDate" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

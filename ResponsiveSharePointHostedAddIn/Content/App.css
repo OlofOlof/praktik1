@@ -1,0 +1,30 @@
+﻿/* Place custom styles below */
+.ui-front {
+	z-index: 1050;
+	width: 180px;
+}
+#FilesTable {
+	font-size: 7px;
+	font-weight: bold;
+}
+#FilesTable_filter, .dataTables_length, .dataTables_info, #FilesTable_paginate, #spList, #adNew {
+	font-size: 10px;
+}
+#toolbar {
+	margin: 5px 0 0 -14px;
+}
+
+#dp .scheduler_default_cellparent, .scheduler_default_cell.scheduler_default_cell_business.scheduler_default_cellparent {
+	background: #f3f3f3;
+}
+#dp {
+	width: 74%;
+	float: right;
+	top: 25px;
+}
+.scheduler_default_main {
+	bottom: 98px;
+}
+#idShow, #idShow1 {
+	display: none;
+}

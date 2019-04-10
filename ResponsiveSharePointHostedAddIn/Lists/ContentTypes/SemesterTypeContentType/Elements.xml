@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100A6E5B5C1719C4887ADEA6C837F0D0D1C" Name="SemesterTypeContentType" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{17d86ddd-37b9-40d4-b549-248a0415cc43}" DisplayName="Assigned To" Required="FALSE" Name="AssignedTo" Sealed="TRUE" ShowInDisplayForm="TRUE" ShowInEditForm="TRUE" ShowInListSettings="TRUE" ShowInNewForm="TRUE" />
+      <FieldRef ID="{4b3d892b-fcb1-4b7a-936c-84ed8e3cf164}" DisplayName="Start Date" Required="FALSE" Name="StartDate" Format="DateOnly" />
+      <FieldRef ID="{e73d59a6-4e7b-4298-8a8c-0f2e5f405946}" DisplayName="End Date" Required="FALSE" Name="EndDate" Format="DateOnly" />
+      <FieldRef ID="{2f0da971-e476-49d6-a380-85786fbe905b}" DisplayName="Assigned Id" Required="FALSE" Name="AssignedId" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

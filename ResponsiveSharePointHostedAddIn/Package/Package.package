@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e937e8b8-81db-4713-ad78-9bb7c175a5d0" solutionId="e937e8b8-81db-4713-ad78-9bb7c175a5d0" resetWebServer="false" sharePointProductVersion="16.0" name="ResponsiveSharePointHostedAddIn" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="28737360-6298-48a7-85da-7e3e3dd33068" />
+    <featureReference itemId="baaafa02-25b1-42f8-b048-79379b749eeb" />
+  </features>
+</package>
